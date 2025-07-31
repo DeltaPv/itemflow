@@ -1,19 +1,34 @@
 {
-    "schemaVersion": 1,
-    "id": "itemflow",
-    "version": "1.0.0",
-    "name": "ItemFlow",
-    "description": "Tracks container changes with clean JSON storage.",
-    "authors": ["YourNameHere"],
-    "icon": "assets/itemflow/icon.png",
-    "entrypoints": {
-        "main": ["com.itemflow.ItemFlow"]
-    },
-    "mixins": ["itemflow.mixins.json"],
-    "depends": {
-        "fabricloader": ">=0.16.9",
-        "minecraft": ">=1.21.3 <=1.21.7",
-        "java": ">=21",
-        "fabric-api": "*"
-    }
+  "schemaVersion": 1,
+  "id": "itemflow",
+  "version": "${version}",
+  "name": "ItemFlow",
+  "description": "Tracks container changes on your minecraft server",
+  "authors": [
+    "DeltaPv"
+  ],
+  "contact": {
+    "homepage": "https://github.com/DeltaPv",
+    "sources": "https://github.com/DeltaPv/itemflow"
+  },
+  "license": "MIT",
+  "icon": "assets/itemflow/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.itemflow.ItemFlow"
+    ],
+    "client": [
+      ""
+    ]
+  },
+  "mixins": [
+    "itemflow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
